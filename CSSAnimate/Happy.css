@@ -1,0 +1,183 @@
+body{
+  background-color: #C1CC11;
+  background-image: url("YellowRose.jpg");
+  animation: rose 6s linear;
+}
+
+@keyframes rose{
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+#Love{
+  border: 4px solid #ffffff;
+  width: 960px;
+  margin: 1em auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #cccccc;
+}
+
+header{
+background-image: linear-gradient(to bottom, #22661a, #26711b, #297c1c, #2e881d, #32931d, #449d1b, #55a718, #66b114, #84bc0e, #a1c709, #bed10a, #dcdb13);
+grid-column: span 12;
+}
+
+h1{
+  color: #ffffff;
+  font-style: italic;
+  font-weight: normal;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  animation: fonts 6s linear;
+}
+
+h3{
+  color: #ffffff;
+  font-style: italic;
+  font-weight: normal;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  animation: fonts 6s linear;
+}
+
+@keyframes fonts {
+  0% {color: #22661a;}
+  8.3% {color: #26711b;}
+  16.6% {color: #297c1c;}
+  25% {color: #2e881d;}
+  33.3% {color: #32931d;}
+  41.6% {color: #449d1b;}
+  50% {color: #55a718;}
+  58.3% {color: #66b114;}
+  66.6% {color: #84bc0e;}
+  75% {color: #a1c709;}
+  83.3% {color: #bed10a;}
+  91.6% {color: #dcdb13;}
+  100% {color: #ffffff;}
+}
+
+main{
+  grid-column: span 12;
+  padding: 2px 1em;
+}
+
+.Title{
+  border-bottom: 3px solid #22661a;
+  font-weight: normal;
+  font-family: 'Courgette', cursive;
+  color: #55a718;
+  font-size: 30px;
+  margin-top: 1em;
+  margin-bottom: 20px;
+  animation: appear 7s linear;
+}
+
+ol{
+  color: #55a718;
+}
+
+.one{
+  animation: appear 10s linear;
+}
+
+.two{
+  animation: appear 13s linear;
+}
+
+.three{
+  animation: appear 16s linear;
+}
+
+.four{
+  animation: appear 19s linear;
+}
+
+.five{
+  animation: appear 22s linear;
+}
+
+.six{
+  animation: appear 25s linear;
+}
+
+@keyframes appear{
+  0% {opacity: 0%;}
+  99% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+main h3{
+  color: #22661a;
+  border-bottom: 1px solid #22661a;
+  animation: appear 30s linear;
+}
+
+.photos{
+  width: 960px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.photos img{
+  margin: 0 80px;
+  border: 2px solid #dcdb13;
+  /* opacity: 0%;
+  filter: blur(10px); */
+  /* transition: 5s all; */
+  animation: hover 5s backwards paused;
+}
+
+img:hover, img:active, img:focus{
+  /* opacity: 100%;
+  filter: blur(0px); */
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  /* Code from https://stackoverflow.com/questions/17100235/make-css-hover-state-remain-after-unhovering/17100294 */
+}
+
+.Parents{
+  margin: 1em 180px;
+  border: 2px solid #dcdb13;
+  /* opacity: 0%;
+  filter: blur(10px); */
+  /* transition: 5s all; */
+  animation: hover 5s backwards paused;
+}
+
+@keyframes hover{
+  0% {opacity: 0%; filter: blur(10px);}
+  100% {opacity: 100%; filter: blur(0px);}
+}
+
+main p{
+  font-family: Georgia, serif;
+  text-align: justify;
+  font-weight: normal;
+  margin-top: 0;
+  color: #22661a;
+}
+
+main p a{
+  text-decoration: none;
+  color: #941b1b;
+  transition: color 1.0s;
+}
+
+main p a:hover{
+  color: #b686b6;
+}
+
+footer{
+  grid-column: span 12;
+  background-color: #dcdb13;
+  border-top: 4px solid #ffffff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer h3{
+  animation: appear 48s linear;
+}
