@@ -1,0 +1,126 @@
+body{
+  background-color: #5dc19a;
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  border: 1px solid black;
+  padding: 24px;
+  background-color: #222222;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+div{
+  grid-column: span 3;
+}
+
+img{
+  border-radius: 500px;
+}
+
+.pics{
+  border-radius: 0;
+}
+
+main{
+  background-image: url(../Assignment7/Howl.jpg);
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 24px;
+}
+
+main h1{
+  color: #ffffff;
+  font: normal bold 144px Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  margin: 24px;
+  grid-column: span 1;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+svg{
+  width: 360px;
+  display: block;
+  margin: 64px 0;
+}
+
+#P{
+  animation: right 5s;
+  transform-origin: center;
+}
+
+@keyframes right{
+  0% {opacity: 0; transform: translate(-200px, 0);}
+  100%{opacity: 1; transform: translate(0, 0);}
+}
+
+#R{
+  animation: up 5s;
+  transform-origin: center;
+}
+
+@keyframes up{
+  0% {opacity: 0; transform: translate(0, 200px);}
+  100%{opacity: 1; transform: translate(0, 0);}
+}
+
+#O{
+  animation: octopus 5s;
+  transform-origin: center;
+}
+
+@keyframes octopus{
+  0% {opacity: 0; transform: translate(0, -200px);}
+  100%{opacity: 1; transform: translate(0, 0);}
+}
+
+article h2{
+  text-align: center;
+  font: normal normal 24px Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+p{
+  margin: 6px;
+  text-align: justify;
+  font: normal normal 12px Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+}
+
+footer{
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 24px;
+  background-color: #ffffff;
+  margin-top: 24px;
+}
+
+.Logo{
+  grid-column: span 1;
+}
+
+footer aside{
+  background-color: #9D4B59;
+}
+
+footer aside h2{
+  text-align: center;
+  font: normal normal 24px Helvetica, Arial, sans-serif;
+  background-color: #9D4B59;
+  color: #ffffff;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+footer a{
+  padding: 24px;
+  font-size: 28px;
+  color: #19556E;
+}
