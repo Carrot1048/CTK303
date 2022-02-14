@@ -14,7 +14,8 @@ function setup() {
 function draw() {
   image(wolf, width/2, 540, 108, 100);
   push();
-  image(moon, width/2, y, 100, 100);
+  translate(0, y);
+  image(moon, width/2, 540, 100, 100);
   y+=-10;
   if(y<50){
     y+=10;
