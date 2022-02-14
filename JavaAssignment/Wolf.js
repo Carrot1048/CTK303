@@ -9,10 +9,6 @@ function setup() {
   imageMode(CENTER);
   wolf = loadImage("wolf.png");
   moon = loadImage("moon.jpg");
-}
-
-function draw() {
-  image(wolf, width/2, 540, 108, 100);
   push();
   translate(0, y);
   y+=-10;
@@ -21,6 +17,18 @@ function draw() {
   }
   fullmoon();
   pop();
+}
+
+function draw() {
+  image(wolf, width/2, 540, 108, 100);
+  // push();
+  // translate(0, y);
+  // y+=-10;
+  // if(y<-540){
+  //   y+=10;
+  // }
+  // fullmoon();
+  // pop();
 }
 
 function fullmoon() {
