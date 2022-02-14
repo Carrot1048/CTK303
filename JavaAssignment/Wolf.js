@@ -1,6 +1,6 @@
 let wolf;
 let moon;
-let y = 540;
+let y = 0;
 
 function setup() {
   let cnv = createCanvas(960, 590);
@@ -16,7 +16,7 @@ function draw() {
   push();
   translate(0, y);
   y+=-10;
-  if(y<50){
+  if(y<-540){
     y+=10;
   }
   fullmoon();
