@@ -5,7 +5,6 @@ let y = 0;
 function setup() {
   let cnv = createCanvas(960, 590);
   cnv.id('Cover');
-  // background(29, 44, 59);
   imageMode(CENTER);
   wolf = loadImage("wolf.png");
   moon = loadImage("moon.jpg");
@@ -17,7 +16,7 @@ function draw() {
   push();
   translate(0, y);
   y+=-10;
-  if(y<-540){
+  if(y<-490){
     y+=10;
   }
   fullmoon();
