@@ -43,13 +43,13 @@ h1{
   font-size: 18px;
 }
 
-h3{
+.foot{
   color: #ffffff;
   font-style: italic;
   font-weight: normal;
   font-family: 'Courgette', cursive;
   text-align: center;
-  animation: fonts 6s linear;
+  font-size: 18px;
 }
 
 @keyframes fonts {
@@ -188,6 +188,6 @@ footer{
   margin-top: 20px;
 }
 
-footer h3{
+footer h2{
   animation: appear 48s linear;
 }
