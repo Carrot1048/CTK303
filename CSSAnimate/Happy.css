@@ -33,6 +33,16 @@ h1{
   animation: fonts 6s linear;
 }
 
+.sub{
+  color: #ffffff;
+  font-style: italic;
+  font-weight: normal;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  animation: fonts 6s linear;
+  font-size: 18px;
+}
+
 h3{
   color: #ffffff;
   font-style: italic;
